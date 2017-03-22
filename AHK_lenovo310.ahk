@@ -4,7 +4,7 @@
 Up::Shift
 RShift::Up
 
-; Autorepeat Up
+; Autorepeat Up (note that this doesn't work along with modifier keys, must use numpad Up key if autorepeat is desired)
 RShift::
 While GetKeyState("RShift","p"){
   SendInput {Up}
@@ -12,7 +12,7 @@ While GetKeyState("RShift","p"){
 }
 return
 
-; CapsLock becomes Ctrl
+; CapsLock becomes an extra Ctrl key
 CapsLock::LControl
 
 ; Shift + Caps is still CapsLock
