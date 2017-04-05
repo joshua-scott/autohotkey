@@ -1,11 +1,5 @@
 #InstallKeybdHook ; allows key logging to get keycodes (double-click script, view > key history and script info)
 
-; CapsLock becomes Ctrl
-CapsLock::LControl
-
-; Shift + Caps is still CapsLock
-+CapsLock::CapsLock
-
 ; media functions using alt and F-keys
 !F5::Media_Play_Pause
 !F6::Media_Stop
@@ -30,3 +24,11 @@ numlock & F11::Send, {Volume_Up}
 !WheelUp::Volume_Up
 !XButton1::Media_Prev
 !XButton2::Media_Next
+
+; Not using the functions below (for now at least) as they make it annoying to type SQL queries
+
+; CapsLock becomes Ctrl
+; CapsLock::LControl
+
+; Shift + Caps is still CapsLock
+; +CapsLock::CapsLock
