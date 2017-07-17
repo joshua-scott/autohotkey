@@ -25,6 +25,14 @@ numlock & F11::Send, {Volume_Up}
 !XButton1::Media_Prev
 !XButton2::Media_Next
 
+; ScrollLock to open Calculator:
+*ScrollLock::Run calc.exe
+
+; Pause = Sublime Text, Shift+Pause = Notepad++
+Pause::Run "C:\Program Files\Sublime Text 3\sublime_text.exe"
++Pause::Run "C:\Program Files (x86)\Notepad++\notepad++.exe"
+
+
 ; Not using the functions below (for now at least) as they make it annoying to type SQL queries
 
 ; CapsLock becomes Ctrl
