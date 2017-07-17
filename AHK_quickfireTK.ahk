@@ -25,8 +25,11 @@ numlock & F11::Send, {Volume_Up}
 !XButton1::Media_Prev
 !XButton2::Media_Next
 
-; ScrollLock to open Calculator:
-*ScrollLock::Run calc.exe
+; ScrollLock to open Calculator and turn on numlock:
+*ScrollLock::
+	Run calc.exe
+	SetNumlockState, on
+return
 
 ; Pause = Sublime Text, Shift+Pause = Notepad++
 Pause::Run "C:\Program Files\Sublime Text 3\sublime_text.exe"
