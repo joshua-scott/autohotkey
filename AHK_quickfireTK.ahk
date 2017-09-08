@@ -1,4 +1,8 @@
-#InstallKeybdHook ; allows key logging to get keycodes (double-click script, view > key history and script info)
+; allows key logging to get keycodes (double-click script, view > key history and script info)
+; #InstallKeybdHook
+
+; it's 2017, we don't need scroll lock
+SetScrollLockState, AlwaysOff
 
 ; media functions using alt and F-keys
 !F5::Media_Play_Pause
@@ -9,37 +13,25 @@
 !F10::Volume_Down
 !F11::Volume_Up
 
-; media functions using numlock and F-keys (for one-handed operation):
-numlock & F5::Send, {Media_Play_Pause}
-numlock & F6::Send, {Media_Stop}
-numlock & F7::Send, {Media_Prev}
-numlock & F8::Send, {Media_Next}
-numlock & F9::Send, {Volume_Mute}
-numlock & F10::Send, {Volume_Down}
-numlock & F11::Send, {Volume_Up}
+; media functions using numlock and F-keys
+NumLock & F5::Send Media_Play_Pause
+NumLock & F6::Send Media_Stop
+NumLock & F7::Send Media_Prev
+NumLock & F8::Send Media_Next
+NumLock & F9::Send Volume_Mute
+NumLock & F10::Send Volume_Down
+NumLock & F11::Send Volume_Up
 
-; media functions using alt and mouse:
+; media functions using alt and mouse
 !MButton::Media_Play_Pause
 !WheelDown::Volume_Down
 !WheelUp::Volume_Up
 !XButton1::Media_Prev
 !XButton2::Media_Next
 
-; ScrollLock to open Calculator and turn on numlock:
-*ScrollLock::
-	Run calc.exe
-	SetNumlockState, on
-return
+; Pause is Alt+Space (which is then mapped to open Wox)
+Pause::!Space
 
-; Pause = Sublime Text, Shift+Pause = Notepad++
-Pause::Run "C:\Program Files\Sublime Text 3\sublime_text.exe"
-+Pause::Run "C:\Program Files (x86)\Notepad++\notepad++.exe"
-
-
-; Not using the functions below (for now at least) as they make it annoying to type SQL queries
-
-; CapsLock becomes Ctrl
+; CapsLock becomes Ctrl. Shift + Caps is still CapsLock (commented out for now as it's kinda annoying)
 ; CapsLock::LControl
-
-; Shift + Caps is still CapsLock
 ; +CapsLock::CapsLock
