@@ -29,7 +29,8 @@ NumLock & F11::Send Volume_Up
 !XButton1::Media_Prev
 !XButton2::Media_Next
 
-; Pause is Alt+Space (which is then mapped to open Wox)
+; Can also open Wox with RWin or Pause
+RWin::!Space
 Pause::!Space
 
 ; CapsLock becomes Ctrl. Shift + Caps is still CapsLock (commented out for now as it's kinda annoying)
