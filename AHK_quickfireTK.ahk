@@ -14,13 +14,13 @@ SetScrollLockState, AlwaysOff
 !F11::Volume_Up
 
 ; media functions using numlock and F-keys
-NumLock & F5::Send Media_Play_Pause
-NumLock & F6::Send Media_Stop
-NumLock & F7::Send Media_Prev
-NumLock & F8::Send Media_Next
-NumLock & F9::Send Volume_Mute
-NumLock & F10::Send Volume_Down
-NumLock & F11::Send Volume_Up
+NumLock & F5::Send { Media_Play_Pause }
+NumLock & F6::Send { Media_Stop }
+NumLock & F7::Send { Media_Prev }
+NumLock & F8::Send { Media_Next }
+NumLock & F9::Send { Volume_Mute }
+NumLock & F10::Send { Volume_Down }
+NumLock & F11::Send { Volume_Up }
 
 ; media functions using alt and mouse
 !MButton::Media_Play_Pause
@@ -29,8 +29,8 @@ NumLock & F11::Send Volume_Up
 !XButton1::Media_Prev
 !XButton2::Media_Next
 
-; Can also open Wox with RWin or Pause
-Pause::!Space
+; Pause opens Sublime Text
+Pause::Run "C:\Program Files\Sublime Text 3\sublime_text.exe"
 
 ; CapsLock becomes Ctrl. Shift + Caps is still CapsLock (commented out for now as it's kinda annoying)
 ; CapsLock::LControl
