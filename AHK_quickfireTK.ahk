@@ -8,7 +8,13 @@ SetScrollLockState, AlwaysOff
 CapsLock::LControl
 >+CapsLock::CapsLock
 
-; media functions using alt and F-keys
+; Vim-style cursor keys using ctrl+win+alt+[kjhl]
+^<#!k::Send, { Up down }
+^<#!j::Send, { Down down }
+^<#!h::Send, { Left down }
+^<#!l::Send, { Right down }
+
+; Media functions using alt and F-keys
 !F5::Media_Play_Pause
 !F6::Media_Stop
 !F7::Media_Prev
@@ -17,7 +23,7 @@ CapsLock::LControl
 !F10::Volume_Down
 !F11::Volume_Up
 
-; media functions using numlock and F-keys
+; Media functions using numlock and F-keys
 NumLock & F5::Send { Media_Play_Pause }
 NumLock & F6::Send { Media_Stop }
 NumLock & F7::Send { Media_Prev }
@@ -26,7 +32,7 @@ NumLock & F9::Send { Volume_Mute }
 NumLock & F10::Send { Volume_Down }
 NumLock & F11::Send { Volume_Up }
 
-; media functions using alt and mouse
+; Media functions using alt and mouse
 !MButton::Media_Play_Pause
 !WheelDown::Volume_Down
 !WheelUp::Volume_Up
