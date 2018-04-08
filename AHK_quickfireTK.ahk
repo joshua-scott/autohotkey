@@ -4,6 +4,10 @@
 ; I have literally never used scroll lock in my life. Maybe I'll repurpose this key later...
 SetScrollLockState, AlwaysOff
 
+; CapsLock becomes Ctrl. RShift + Caps is still CapsLock
+CapsLock::LControl
+>+CapsLock::CapsLock
+
 ; media functions using alt and F-keys
 !F5::Media_Play_Pause
 !F6::Media_Stop
@@ -31,7 +35,3 @@ NumLock & F11::Send { Volume_Up }
 
 ; Pause opens Sublime Text
 Pause::Run "C:\Program Files\Sublime Text 3\sublime_text.exe"
-
-; CapsLock becomes Ctrl. Shift + Caps is still CapsLock (commented out for now as it's kinda annoying)
-; CapsLock::LControl
-; +CapsLock::CapsLock
