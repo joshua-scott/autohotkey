@@ -15,6 +15,7 @@ SetScrollLockState, AlwaysOff
 <!m::Send, { PgDn down }
 <!i::Send, { Home down }
 <!,::Send, { End down }
+<!BS::Send, { Del down }
 
 ; CapsLock becomes Ctrl. RShift + Caps is still CapsLock
 CapsLock::LCtrl
