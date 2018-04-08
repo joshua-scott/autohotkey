@@ -1,7 +1,7 @@
 ; allows key logging to get keycodes (double-click script, view > key history and script info)
 ; #InstallKeybdHook
 
-; it's 2017, we don't need scroll lock
+; I have literally never used scroll lock in my life. Maybe I'll repurpose this key later...
 SetScrollLockState, AlwaysOff
 
 ; media functions using alt and F-keys
