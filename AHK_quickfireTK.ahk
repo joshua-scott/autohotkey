@@ -47,3 +47,7 @@ NumLock & F11::Send { Volume_Up }
 
 ; Pause opens Sublime Text
 Pause::Run "C:\Program Files\Sublime Text 3\sublime_text.exe"
+
+; Useful links
+; https://autohotkey.com/docs/KeyList.htm
+; https://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts
