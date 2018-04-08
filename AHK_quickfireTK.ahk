@@ -4,15 +4,20 @@
 ; I have literally never used scroll lock in my life. Maybe I'll repurpose this key later...
 SetScrollLockState, AlwaysOff
 
-; Vim-style cursor keys using LCtrl+[kjhl] 😎
-<^k::Send, { Up down }
-<^j::Send, { Down down }
-<^h::Send, { Left down }
-<^l::Send, { Right down }
+; Vim-style cursor keys using Alt+[hjkl] 😎
+<!k::Send, { Up down }
+<!j::Send, { Down down }
+<!h::Send, { Left down }
+<!l::Send, { Right down }
+
+; Other useful Alt stuff
+<!u::Send, { PgUp down }
+<!m::Send, { PgDn down }
+<!i::Send, { Home down }
+<!,::Send, { End down }
 
 ; CapsLock becomes Ctrl. RShift + Caps is still CapsLock
-; RCtrl is chosen to prevent e.g. CapsLock+j triggering the vim cursors
-CapsLock::RCtrl
+CapsLock::LCtrl
 >+CapsLock::CapsLock
 
 ; Media functions using alt and F-keys
